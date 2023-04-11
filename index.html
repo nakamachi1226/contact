@@ -11,7 +11,27 @@
     <div class="contact-form">
         <p class="title">お問合せはこちらから</p>
         <form action="index.php" method="post">
+
+            <div class="item">
+                <label class="label">お名前</label>
+                <input type="text" class="inputs" name="name" required />
+            </div>
+
+            <div class="item">
+                <label class="label">メールアドレス</label>
+                <input type="email" class="inputs" name="email" required/>
+            </div>
+
+            <div class="item">
+                <label class="label">お問合せ内容</label>
+                <textarea class="inputs" placeholder="お問合せ内容"></textarea>
+            </div>
             
+            <div class="button-area">
+                <input type="submit" value="問い合わせ">
+                <input type="reset" value="クリア">
+            </div>
+
         </form>
     </div>
 </body>
